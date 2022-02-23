@@ -10,7 +10,7 @@
 
   /* cd animation forside */
 
-  .cd1 img {
+  #cd1 img {
     -webkit-animation: rotate-center 2s ease-in-out infinite both;
     animation: rotate-center 2s ease-in-out infinite both;
   }
