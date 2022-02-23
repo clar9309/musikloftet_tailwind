@@ -11,8 +11,20 @@
   /* cd animation forside */
 
   #cd1 img {
-    -webkit-animation: rotate-center 2s ease-in-out infinite both;
-    animation: rotate-center 2s ease-in-out infinite both;
+    -webkit-animation: rotate-center 3s ease-in-out infinite both;
+    animation: rotate-center 3s ease-in-out infinite both;
+  }
+  #cd2 img {
+    -webkit-animation: rotate-center 3s ease-in-out infinite both;
+    animation: rotate-center 3s ease-in-out infinite both;
+  }
+  #cd3 img {
+    -webkit-animation: rotate-center 3s ease-in-out infinite both;
+    animation: rotate-center 3s ease-in-out infinite both;
+  }
+  #cd4 img {
+    -webkit-animation: rotate-center 3s ease-in-out infinite both;
+    animation: rotate-center 3s ease-in-out infinite both;
   }
 
   /* ----------------------------------------------
