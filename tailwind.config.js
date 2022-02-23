@@ -13,6 +13,9 @@ module.exports = {
         carme: "'Carme', sans serif",
         noto: "'Noto Serif', serif",
       },
+      maxWidth: {
+        readable: "60ch",
+      },
     },
   },
   plugins: [
