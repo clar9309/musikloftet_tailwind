@@ -43,11 +43,13 @@
               300 kr./måned
             </h3>
             <article class="grid grid-cols-2 md:grid-cols-1">
-              <button
-                class="font-carme bg-dark text-cream border-dark hover:bg-cream hover:text-dark border-2 border-solid px-8 py-2"
-              >
-                <a href="#book">BOOK NU</a>
-              </button>
+              <div class="md:flex md:justify-end">
+                <button
+                  class="font-carme bg-dark text-cream border-dark hover:bg-cream hover:text-dark border-2 border-solid px-8 py-3"
+                >
+                  <a href="#book">BOOK NU</a>
+                </button>
+              </div>
               <!-- dropdown med udstyr her -->
               <div class="dropdown dropdown-end flex justify-end md:mt-5">
                 <label tabindex="0" class="btn bg-dark font-carme rounded-none"
@@ -90,7 +92,7 @@
         <article class="md:grid md:grid-cols-2 md:gap-5">
           <div>
             <h3 class="font-carme mb-5 flex justify-center pt-2 text-2xl">
-              Kalender
+              1. Kalender
             </h3>
             <div class="flex justify-center">
               <a class="mr-5 mt-1 self-center" href="#"
@@ -187,7 +189,7 @@
                       13
                     </th>
                     <th
-                      class="font-carme text-dark border-dark hover:bg-dark hover:text-cream border-2 border-solid px-4 py-2"
+                      class="font-carme text-dark border-dark hover:bg-dark hover:text-cream border-2 border-solid px-4 py-2 lg:px-6"
                     >
                       14
                     </th>
@@ -287,13 +289,15 @@
           </div>
           <!-- Ledige tider -->
           <div>
-            <h3 class="font-carme mt-5 mb-5 flex justify-center pt-2 text-2xl">
-              Ledige tider
+            <h3
+              class="font-carme mb-5 mt-5 flex justify-center pt-2 text-2xl md:mt-0"
+            >
+              2. Ledige tider
             </h3>
-            <div class="grid grid-cols-2">
-              <h4 class="font-carme place-self-center text-xl">Vælg en tid</h4>
+            <h4 class="font-carme text-center text-xl">Vælg en tid</h4>
+            <div class="grid grid-cols-3">
               <img
-                class="place-self-center self-center"
+                class="col-start-2 mb-5 place-self-end"
                 src="img/pilned.svg"
                 alt="pil"
               />
@@ -314,7 +318,9 @@
           </div>
         </article>
         <!-- Book: Knap -->
-        <div class="flex justify-center">
+        <div class="mt-10 flex justify-center space-x-4">
+          <h3 class="font-carme self-center pt-2 text-2xl md:mt-0">3. Book!</h3>
+          <img src="img/pil.svg" alt="" />
           <button
             class="font-carme bg-dark text-cream border-dark hover:bg-cream hover:text-dark mt-5 border-2 border-solid px-8 py-4"
           >
