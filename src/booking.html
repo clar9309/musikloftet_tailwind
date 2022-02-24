@@ -25,132 +25,175 @@
       <a href="mellem.html">Mellem</a>
       <a href="stor.html">Stor</a>
 
-      <h1 class="font-carme mb-5 mt-20 text-7xl">BOOKING</h1>
-      <h1 class="font-noto mb-5 text-7xl italic">AF</h1>
-      <h1 class="font-carme text-7xl">LOKALER</h1>
-      <div class="flex">
-        <div class="mt-10">
-          <h3 class="font-carme mb-5 text-2xl">KLIK FOR AT NAVIGERE</h3>
+      <h1 class="font-carme mb-5 mt-20 text-7xl sm:text-8xl md:text-9xl">
+        BOOKING
+      </h1>
+      <h1 class="font-noto mb-5 text-7xl italic sm:text-8xl md:text-9xl">AF</h1>
+      <h1 class="font-carme text-7xl sm:text-8xl md:text-9xl">LOKALER</h1>
+      <section class="md:grid md:grid-cols-2">
+        <div>
+          <div class="mt-10 flex">
+            <h3 class="font-carme text-2xl sm:text-3xl">
+              KLIK FOR AT NAVIGERE
+            </h3>
+            <img class="sm:w-10" src="img/pilnav.svg" alt="pil" />
+          </div>
           <nav>
             <ul>
-              <li class="pb-2"><a href="#first">LILLE LOKALE</a></li>
-              <li class="pb-2"><a href="#second">MELLEM LOKALE</a></li>
-              <li><a href="#third">STORT LOKALE</a></li>
+              <li class="font-carme pb-2"><a href="#first">LILLE LOKALE</a></li>
+              <li class="font-carme pb-2">
+                <a href="#second">MELLEM LOKALE</a>
+              </li>
+              <li class="font-carme"><a href="#third">STORT LOKALE</a></li>
             </ul>
           </nav>
         </div>
-        <img class="" src="img/pilnav.svg" alt="pil" />
-      </div>
-
-      <section class="mt-20">
         <img
-          class="mb-10"
+          class="mb-10 mt-10"
           src="img/lokaleoversigt_lilla.png"
           alt="lokaleoversigt"
         />
-        <h2 class="font-noto mb-5 text-5xl">SMÅ BRANDS STORE AMBITIONER</h2>
-        <p class="font-carme mb-20">
-          Vi tilbyder tre typer lokaler, som alle er baggearslokaler: Ét lille
-          lokale på 10m2, fire mellem lokaler (16-22 m2) og tre store lokaler
-          (33-36m2). Dertil er der fælles toilet på gangen og et lille
-          fælleskøkken med tagterasse, hvor man kan nyde et glas om sommeren.
-          Lokalerne lejes for et tidsrum på tre timer én dag om ugen - nok til
-          en god øver. Alle lokalerne er godt støjdæmpede, og er udstyret med
-          det nødvendige for at spille. Se udstyr og ledige tider i
-          lokalebeskrivelserne nedenfor.
-        </p>
+      </section>
+      <section class="mt-20">
+        <div class="md:mb-20 md:grid md:grid-cols-2 md:gap-7">
+          <h2
+            class="font-noto mb-5 text-5xl sm:text-6xl md:hidden md:self-center md:text-right"
+          >
+            SMÅ BANDS, STORE AMBITIONER
+          </h2>
+          <h2
+            class="font-noto mb-5 hidden text-5xl md:block md:self-center md:text-right md:text-7xl"
+          >
+            SMÅ BANDS, STORE AMBI-<br />TIONER
+          </h2>
+          <p class="font-carme max-w-readable mb-20 md:mb-0 md:self-center">
+            Vi tilbyder tre typer lokaler, som alle er baggearslokaler: Ét lille
+            lokale på 10m2, fire mellem lokaler (16-22 m2) og tre store lokaler
+            (33-36m2). Dertil er der fælles toilet på gangen og et lille
+            fælleskøkken med tagterasse, hvor man kan nyde et glas om sommeren.
+            Lokalerne lejes for et tidsrum på tre timer én dag om ugen - nok til
+            en god øver. Alle lokalerne er godt støjdæmpede, og er udstyret med
+            det nødvendige for at spille. Se udstyr og ledige tider i
+            lokalebeskrivelserne nedenfor.
+          </p>
+        </div>
         <hr class="border-lavendel border-2 border-solid" />
       </section>
 
       <!-- Lilla streg som opdeler -->
 
       <!-- LILLE LOKALE -->
-      <section id="first" class="mt-20">
-        <div>
-          <h2 class="font-noto mb-5 text-5xl">LILLE LOKALE</h2>
-          <p class="font-carme">
+      <section
+        id="first"
+        class="mt-20 md:mt-40 md:grid md:grid-cols-2 md:gap-7"
+      >
+        <article>
+          <h2 class="font-noto mb-5 text-5xl sm:text-6xl md:text-7xl">
+            LILLE LOKALE
+          </h2>
+          <p class="font-carme max-w-readable">
             Det lille lokale er ca. 10m2, og er oplagt for små bands/orkestre,
             der ikke har en trommeslager. Det lille lokale koster 300/måned for
             tre timer én dag om ugen, og bindingsperioden for leje af et lokale
             er løbende måned + 30 dage. Se ledige tider i tabellen til højre.
           </p>
-          <h3 class="font-carme mb-5 pt-2 text-2xl">300 kr./måned</h3>
-        </div>
-        <!-- lokale oversigt -->
-        <div>
-          <img src="img/lille_lokale.png" alt="lille lokale oversigt" />
-        </div>
-
-        <!-- booking knap -->
-        <p class="mt-10 pt-2">Læs mere eller book her</p>
-        <div class="grid grid-cols-2">
-          <img class="ml-20 self-center" src="img/pil.svg" alt="streg" />
-          <button
-            class="font-carme bg-dark text-cream border-dark hover:bg-cream hover:text-dark border-2 border-solid px-8 py-4"
-          >
-            <a href="lille.html">BOOK NU</a>
-          </button>
-        </div>
+          <h3 class="font-carme mb-5 pt-2 text-2xl sm:text-3xl">
+            300 kr./måned
+          </h3>
+        </article>
+        <article>
+          <!-- lokale oversigt -->
+          <div>
+            <img src="img/lille_lokale.png" alt="lille lokale oversigt" />
+          </div>
+          <!-- booking knap -->
+          <p class="mt-10 pt-2">Læs mere eller book her</p>
+          <div class="grid grid-cols-2 gap-8">
+            <img class="ml-20 self-center" src="img/pil.svg" alt="streg" />
+            <button
+              class="font-carme bg-dark text-cream border-dark hover:bg-cream hover:text-dark border-2 border-solid px-8 py-4 md:px-6"
+            >
+              <a href="lille.html">BOOK NU</a>
+            </button>
+          </div>
+        </article>
       </section>
 
       <!-- MELLEM LOKALE -->
-      <section id="second" class="mt-20">
-        <div>
-          <h2 class="font-noto mb-5 text-5xl">MELLEM LOKALE</h2>
-          <p class="font-carme">
+      <section
+        id="second"
+        class="mt-20 md:mt-40 md:grid md:grid-cols-2 md:grid-rows-1 md:gap-7"
+      >
+        <article class="col-start-2">
+          <h2 class="font-noto mb-5 text-5xl sm:text-6xl md:text-7xl">
+            MELLEM LOKALE
+          </h2>
+          <p class="font-carme max-w-readable">
             De fire mellemstore lokaler er mellem 16 og 22m2, og er oplagt for
             mindre rockbands med trommer - typisk tre-fire bandmedlemmer. Et
             mellem lokale koster 500/måned for tre timer én dag om ugen, og
             bindingsperioden for leje af et lokale er løbende måned + 30 dage.
             Se ledige tider i tabellen til højre.
           </p>
-          <h3 class="font-carme mb-5 pt-2 text-2xl">500 kr./måned</h3>
-        </div>
+          <h3 class="font-carme mb-5 pt-2 text-2xl sm:text-3xl">
+            500 kr./måned
+          </h3>
+        </article>
         <!-- lokale oversigt -->
-        <div>
-          <img src="img/mellem_lokale.png" alt="mellem lokale oversigt" />
-        </div>
+        <article class="col-start-1 row-start-1">
+          <div>
+            <img src="img/mellem_lokale.png" alt="mellem lokale oversigt" />
+          </div>
 
-        <!-- booking knap -->
-        <p class="mt-10 pt-2">Læs mere eller book her</p>
-        <div class="grid grid-cols-2">
-          <img class="ml-20 self-center" src="img/pil.svg" alt="streg" />
-          <button
-            class="font-carme bg-dark text-cream border-dark hover:bg-cream hover:text-dark border-2 border-solid px-8 py-4"
-          >
-            <a href="mellem.html">BOOK NU</a>
-          </button>
-        </div>
+          <!-- booking knap -->
+          <p class="mt-10 pt-2">Læs mere eller book her</p>
+          <div class="grid grid-cols-2 gap-8">
+            <img class="ml-20 self-center" src="img/pil.svg" alt="streg" />
+            <button
+              class="font-carme bg-dark text-cream border-dark hover:bg-cream hover:text-dark border-2 border-solid px-8 py-4 md:px-6"
+            >
+              <a href="mellem.html">BOOK NU</a>
+            </button>
+          </div>
+        </article>
       </section>
 
       <!-- STORT LOKALE -->
-      <section id="third" class="mt-20">
-        <div>
-          <h2 class="font-noto mb-5 text-5xl">STORT LOKALE</h2>
-          <p class="font-carme">
+      <section
+        id="first"
+        class="mt-20 md:mt-40 md:mb-40 md:grid md:grid-cols-2 md:gap-7"
+      >
+        <article>
+          <h2 class="font-noto mb-5 text-5xl sm:text-6xl md:text-7xl">
+            STORT LOKALE
+          </h2>
+          <p class="font-carme max-w-readable">
             De tre store lokaler er mellem 33 og 36m2, så her er der plads til
             det helt store funk-band, og så er der også en lille lounge-afdeling
             til at tage en chiller. Et stort lokale koster 800/måned for tre
             timer én dag om ugen, og bindingsperioden for leje af et lokale er
             løbende måned + 30 dage. Se ledige tider i tabellen til højre.
           </p>
-          <h3 class="font-carme mb-5 pt-2 text-2xl">800 kr./måned</h3>
-        </div>
-        <!-- lokale oversigt -->
-        <div>
-          <img src="img/stor_lokale.png" alt="stor lokale oversigt" />
-        </div>
-
-        <!-- booking knap -->
-        <p class="mt-10 pt-2">Læs mere eller book her</p>
-        <div class="grid grid-cols-2">
-          <img class="ml-20 self-center" src="img/pil.svg" alt="streg" />
-          <button
-            class="font-carme bg-dark text-cream border-dark hover:bg-cream hover:text-dark border-2 border-solid px-8 py-4"
-          >
-            <a href="stor.html">BOOK NU</a>
-          </button>
-        </div>
+          <h3 class="font-carme mb-5 pt-2 text-2xl sm:text-3xl">
+            800 kr./måned
+          </h3>
+        </article>
+        <article>
+          <!-- lokale oversigt -->
+          <div>
+            <img src="img/stor_lokale.png" alt="lille lokale oversigt" />
+          </div>
+          <!-- booking knap -->
+          <p class="mt-10 pt-2">Læs mere eller book her</p>
+          <div class="grid grid-cols-2 gap-8">
+            <img class="ml-20 self-center" src="img/pil.svg" alt="streg" />
+            <button
+              class="font-carme bg-dark text-cream border-dark hover:bg-cream hover:text-dark border-2 border-solid px-8 py-4 md:px-6"
+            >
+              <a href="stor.html">BOOK NU</a>
+            </button>
+          </div>
+        </article>
       </section>
       <footer class="footer mt-20 mb-10 p-10 text-black md:gap-20 lg:gap-40">
         <div>
