@@ -48,6 +48,7 @@
     right: -100%;
     height: 100%;
     width: 100%;
+    z-index: 100;
     background: black;
     /*background: linear-gradient(90deg, #f92c78, #4114a1);*/
     /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
@@ -62,7 +63,7 @@
 
   .menu-btn {
     position: absolute;
-    z-index: 2;
+    z-index: 200;
     right: 20px;
     /*left: 20px; */
     top: 20px;
@@ -154,6 +155,10 @@
     text-align: center;
   }
 
+  .wrapper ul li a:hover {
+    color: black !important;
+  }
+
   .wrapper ul li a:after {
     position: absolute;
     content: "";
@@ -166,7 +171,7 @@
     top: 0;
     border-radius: 50px;
     transform: scaleY(0);
-    z-index: 10;
+    z-index: -1;
     transition: transform 0.3s ease;
   }
 
