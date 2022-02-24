@@ -13,7 +13,7 @@
       rel="stylesheet"
     />
   </head>
-  <body class="mx-4">
+  <body class="md:mx-30 mx-4 sm:mx-20 lg:mx-40 xl:mx-60">
     <header></header>
     <main>
       <a href="booking.html">Booking</a>
@@ -26,67 +26,308 @@
       <a href="stor.html">Stor</a>
       <section class="mb-20">
         <h1 class="font-carme mb-5 mt-20 text-7xl">STORT</h1>
-        <h1 class="font-noto mb-5 text-7xl italic">LOKALE</h1>
-        <div>
-          <!-- <img src="" alt=""> -->
-        </div>
-        <div>
-          <p class="font-carme mb-5">
-            De tre store lokaler er mellem 33 og 36m2, så her er der plads til
-            det helt store funk-band, og så er der også en lille lounge-afdeling
-            til at tage en chiller. Et stort lokale koster 800/måned for tre
-            timer én dag om ugen, og bindingsperioden for leje af et lokale er
-            løbende måned + 30 dage. Se ledige tider i tabellen til højre.
-          </p>
-          <h3 class="font-carme mb-5 flex justify-end pt-2 text-2xl">
-            800 kr./måned
-          </h3>
-        </div>
-        <!-- dropdown med udstyr her -->
-        <div class="dropdown dropdown-end flex justify-end">
-          <label tabindex="0" class="btn bg-dark m-1 rounded-none"
-            >Udstyr i lokalet <img src="img/dropdown.svg" alt=""
-          /></label>
-          <ul
-            tabindex="0"
-            class="menu dropdown-content bg-dark text-cream mt-10 w-52 rounded-none p-2 shadow"
-          >
-            <li class="p-2">2 stk. Bronco Deville 2x10 Guitarcombo</li>
-            <hr class="border-lavendel border-1 border-solid" />
-            <li class="p-2">Snorx AC30C2 Basscombo</li>
-            <hr class="border-lavendel border-1 border-solid" />
-            <li class="p-2">Korka 4-kanals sanganlæg</li>
-            <hr class="border-lavendel border-1 border-solid" />
-            <li class="p-2">Mooga 6 oktavers keyboard</li>
-            <hr class="border-lavendel border-1 border-solid" />
-            <li class="p-2">2 stk Castafiore vokalmikrofoner på stativ</li>
-            <hr class="border-lavendel border-1 border-solid" />
-            <li class="p-2">6-spors Beckeringer mixer</li>
-          </ul>
-        </div>
+        <h1 class="font-noto mb-10 text-7xl italic">LOKALE</h1>
+        <article class="md:grid md:grid-cols-2 md:gap-5">
+          <div class="mb-10">
+            <img src="img/cd2.svg" alt="CD grafik" />
+          </div>
+          <div>
+            <p class="font-carme max-w-readable mb-5">
+              De tre store lokaler er mellem 33 og 36m2, så her er der plads til
+              det helt store funk-band, og så er der også en lille
+              lounge-afdeling til at tage en chiller. Et stort lokale koster
+              800/måned for tre timer én dag om ugen, og bindingsperioden for
+              leje af et lokale er løbende måned + 30 dage. Se ledige tider i
+              tabellen til højre.
+            </p>
+            <h3 class="font-carme mb-5 flex justify-end pt-2 text-2xl">
+              800 kr./måned
+            </h3>
+            <article class="grid grid-cols-2 md:grid-cols-1">
+              <div class="md:flex md:justify-end">
+                <button
+                  class="font-carme bg-dark text-cream border-dark hover:bg-cream hover:text-dark border-2 border-solid px-8 py-3"
+                >
+                  <a href="#book">BOOK NU</a>
+                </button>
+              </div>
+              <!-- dropdown med udstyr her -->
+              <div class="dropdown dropdown-end flex justify-end md:mt-5">
+                <label tabindex="0" class="btn bg-dark font-carme rounded-none"
+                  >Udstyr i lokalet <img src="img/dropdown.svg" alt=""
+                /></label>
+                <ul
+                  tabindex="0"
+                  class="menu dropdown-content bg-dark text-cream mt-10 w-52 rounded-none p-2 shadow"
+                >
+                  <li class="p-2">2 stk. Bronco Deville 2x10 Guitarcombo</li>
+                  <hr class="border-lavendel border-1 border-solid" />
+                  <li class="p-2">Snorx AC30C2 Basscombo</li>
+                  <hr class="border-lavendel border-1 border-solid" />
+                  <li class="p-2">Korka 4-kanals sanganlæg</li>
+                  <hr class="border-lavendel border-1 border-solid" />
+                  <li class="p-2">Mooga 6 oktavers keyboard</li>
+                  <hr class="border-lavendel border-1 border-solid" />
+                  <li class="p-2">
+                    2 stk Castafiore vokalmikrofoner på stativ
+                  </li>
+                  <hr class="border-lavendel border-1 border-solid" />
+                  <li class="p-2">6-spors Beckeringer mixer</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </article>
       </section>
 
       <!-- BOOKING -->
-      <section>
-        <h2 class="font-noto mb-5 text-5xl">BOOK NU</h2>
-        <div class="mb-5 flex">
+      <section class="mb-10">
+        <h2 id="book" class="font-noto mb-5 text-5xl">BOOK NU</h2>
+        <div class="mb-5 flex justify-center">
           <p class="font-carme">Vælg en dato</p>
           <img class="w-auto pr-5" src="img/pil.svg" alt="" />
           <p class="font-carme pr-5">Vælg en ledig tid</p>
           <img class="w-auto pr-5" src="img/pil.svg" alt="" />
           <p class="font-carme">Fuldfør booking</p>
         </div>
-        <h3 class="font-carme mb-5 pt-2 text-2xl">Kalender</h3>
-        <div class="flex justify-center">
-          <a class="mr-5 mt-1 self-center" href="#"
-            ><img src="img/kalender_venstre.svg" alt="pil"
-          /></a>
-          <h4 class="font-carme text-2xl">Februar</h4>
-          <a class="ml-3 mt-1 self-center" href="#"
-            ><img src="img/kalender_højre.svg" alt="pil"
-          /></a>
+        <article class="md:grid md:grid-cols-2 md:gap-5">
+          <div>
+            <h3 class="font-carme mb-5 flex justify-center pt-2 text-2xl">
+              1. Kalender
+            </h3>
+            <div class="flex justify-center">
+              <a class="mr-5 mt-1 self-center" href="#"
+                ><img src="img/kalender_venstre.svg" alt="pil"
+              /></a>
+              <h4 class="font-carme text-xl">Februar</h4>
+              <a class="ml-3 mt-1 self-center" href="#"
+                ><img src="img/kalender_højre.svg" alt="pil"
+              /></a>
+            </div>
+            <!-- KALENDER START -->
+            <div class="flex justify-center">
+              <table>
+                <thead>
+                  <tr>
+                    <th class="font-carme">Man</th>
+                    <th class="font-carme">Tir</th>
+                    <th class="font-carme">Ons</th>
+                    <th class="font-carme">Tor</th>
+                    <th class="font-carme">Fre</th>
+                    <th class="font-carme">Lør</th>
+                    <th class="font-carme">Søn</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Række 1 -->
+                  <tr>
+                    <th
+                      class="font-carme text-dark border-dark hover:bg-dark hover:text-cream border-2 border-solid px-4 py-2"
+                    >
+                      1
+                    </th>
+                    <th
+                      class="font-carme text-dark border-dark hover:bg-dark hover:text-cream border-2 border-solid px-4 py-2"
+                    >
+                      2
+                    </th>
+                    <th
+                      class="font-carme text-dark border-dark hover:bg-dark hover:text-cream border-2 border-solid px-4 py-2"
+                    >
+                      3
+                    </th>
+                    <th
+                      class="font-carme text-dark border-dark hover:bg-dark hover:text-cream border-2 border-solid px-4 py-2"
+                    >
+                      4
+                    </th>
+                    <th
+                      class="font-carme text-dark border-dark hover:bg-dark hover:text-cream border-2 border-solid px-4 py-2"
+                    >
+                      5
+                    </th>
+                    <th
+                      class="font-carme text-dark border-dark hover:bg-dark hover:text-cream border-2 border-solid px-4 py-2"
+                    >
+                      6
+                    </th>
+                    <th
+                      class="font-carme text-dark border-dark hover:bg-dark hover:text-cream border-2 border-solid px-4 py-2"
+                    >
+                      7
+                    </th>
+                  </tr>
+                  <!-- Række 2 -->
+                  <tr>
+                    <th
+                      class="font-carme text-dark border-dark hover:bg-dark hover:text-cream border-2 border-solid px-4 py-2"
+                    >
+                      8
+                    </th>
+                    <th
+                      class="font-carme text-dark border-dark hover:bg-dark hover:text-cream border-2 border-solid px-4 py-2"
+                    >
+                      9
+                    </th>
+                    <th
+                      class="font-carme text-dark border-dark hover:bg-dark hover:text-cream border-2 border-solid px-4 py-2"
+                    >
+                      10
+                    </th>
+                    <th
+                      class="font-carme text-dark border-dark hover:bg-dark hover:text-cream border-2 border-solid px-4 py-2"
+                    >
+                      11
+                    </th>
+                    <th
+                      class="font-carme text-dark border-dark hover:bg-dark hover:text-cream border-2 border-solid px-4 py-2"
+                    >
+                      12
+                    </th>
+                    <th
+                      class="font-carme text-dark border-dark hover:bg-dark hover:text-cream border-2 border-solid px-4 py-2"
+                    >
+                      13
+                    </th>
+                    <th
+                      class="font-carme text-dark border-dark hover:bg-dark hover:text-cream border-2 border-solid px-4 py-2 lg:px-6"
+                    >
+                      14
+                    </th>
+                  </tr>
+                  <!-- Række 3 -->
+                  <tr>
+                    <th
+                      class="font-carme text-dark border-dark hover:bg-dark hover:text-cream border-2 border-solid px-4 py-2"
+                    >
+                      15
+                    </th>
+                    <th
+                      class="font-carme text-dark border-dark hover:bg-dark hover:text-cream border-2 border-solid px-4 py-2"
+                    >
+                      16
+                    </th>
+                    <th
+                      class="font-carme text-dark border-dark hover:bg-dark hover:text-cream border-2 border-solid px-4 py-2"
+                    >
+                      17
+                    </th>
+                    <th
+                      class="font-carme text-dark border-dark hover:bg-dark hover:text-cream border-2 border-solid px-4 py-2"
+                    >
+                      18
+                    </th>
+                    <th
+                      class="font-carme text-dark border-dark hover:bg-dark hover:text-cream border-2 border-solid px-4 py-2"
+                    >
+                      19
+                    </th>
+                    <th
+                      class="font-carme text-dark border-dark hover:bg-dark hover:text-cream border-2 border-solid px-4 py-2"
+                    >
+                      20
+                    </th>
+                    <th
+                      class="font-carme text-dark border-dark hover:bg-dark hover:text-cream border-2 border-solid px-4 py-2"
+                    >
+                      21
+                    </th>
+                  </tr>
+                  <!-- Række 4 -->
+                  <tr>
+                    <th
+                      class="font-carme text-dark border-dark hover:bg-dark hover:text-cream border-2 border-solid px-4 py-2"
+                    >
+                      22
+                    </th>
+                    <th
+                      class="font-carme text-dark border-dark hover:bg-dark hover:text-cream border-2 border-solid px-4 py-2"
+                    >
+                      23
+                    </th>
+                    <th
+                      class="font-carme text-dark border-dark hover:bg-dark hover:text-cream border-2 border-solid px-4 py-2"
+                    >
+                      24
+                    </th>
+                    <th
+                      class="font-carme text-dark border-dark hover:bg-dark hover:text-cream border-2 border-solid px-4 py-2"
+                    >
+                      26
+                    </th>
+                    <th
+                      class="font-carme text-dark border-dark hover:bg-dark hover:text-cream border-2 border-solid px-4 py-2"
+                    >
+                      27
+                    </th>
+                    <th
+                      class="font-carme text-dark border-dark hover:bg-dark hover:text-cream border-2 border-solid px-4 py-2"
+                    >
+                      28
+                    </th>
+                    <th
+                      class="font-carme text-dark border-dark hover:bg-dark hover:text-cream border-2 border-solid px-4 py-2"
+                    >
+                      29
+                    </th>
+                  </tr>
+                  <!-- Række 5 -->
+                  <tr>
+                    <th
+                      class="font-carme text-dark border-dark hover:bg-dark hover:text-cream border-2 border-solid px-4 py-2"
+                    >
+                      30
+                    </th>
+                    <th
+                      class="font-carme text-dark border-dark hover:bg-dark hover:text-cream border-2 border-solid px-4 py-2"
+                    >
+                      31
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- Ledige tider -->
+          <div>
+            <h3
+              class="font-carme mb-5 mt-5 flex justify-center pt-2 text-2xl md:mt-0"
+            >
+              2. Ledige tider
+            </h3>
+            <h4 class="font-carme text-center text-xl">Vælg en tid</h4>
+            <div class="grid grid-cols-3">
+              <img
+                class="col-start-2 mb-5 place-self-end"
+                src="img/pilned.svg"
+                alt="pil"
+              />
+            </div>
+            <!-- Ledige tider: Knapper -->
+            <div class="flex justify-center space-x-4">
+              <button
+                class="font-carme bg-cream text-dark border-dark hover:bg-dark hover:text-cream border-2 border-solid px-4 py-2"
+              >
+                <a href="#">9-12</a>
+              </button>
+              <button
+                class="font-carme bg-cream text-dark border-dark hover:bg-dark hover:text-cream border-2 border-solid px-4 py-2"
+              >
+                <a href="#">21-24</a>
+              </button>
+            </div>
+          </div>
+        </article>
+        <!-- Book: Knap -->
+        <div class="mt-10 flex justify-center space-x-4">
+          <h3 class="font-carme self-center pt-2 text-2xl md:mt-0">3. Book!</h3>
+          <img src="img/pil.svg" alt="" />
+          <button
+            class="font-carme bg-dark text-cream border-dark hover:bg-cream hover:text-dark mt-5 border-2 border-solid px-8 py-4"
+          >
+            <a href="#">BOOK</a>
+          </button>
         </div>
-        <table></table>
       </section>
     </main>
     <footer></footer>
