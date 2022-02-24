@@ -15,7 +15,7 @@
   </head>
   <body class="bg-cream">
     <header></header>
-    <main class="md:mx-30 mx-4 sm:mx-20 lg:mx-40 xl:mx-60">
+    <main class="md:mx-30 xl:mx-6X mx-4 sm:mx-20 lg:mx-40">
       <a href="booking.html">Booking</a>
       <a href="FAQ.html">FAQ</a>
       <a href="galleri.html">Galleri</a>
@@ -24,9 +24,11 @@
       <a href="lille.html">Lille</a>
       <a href="mellem.html">Mellem</a>
       <a href="stor.html">Stor</a>
-      <section id="galleri">
-        <h1 class="font-carme mb-5 mt-20 text-7xl">GALLERI</h1>
-        <div class="section_wrapper">
+      <section id="galleri" class="">
+        <h1 class="font-carme mb-5 mt-20 text-7xl sm:text-8xl md:text-9xl">
+          GALLERI
+        </h1>
+        <div class="section_wrapper md:grid-gap-4 md:grid md:grid-cols-3">
           <div class="image1 mb-10">
             <img src="img/gal1.webp" alt="musik" />
           </div>
@@ -71,6 +73,35 @@
           </div>
         </div>
       </section>
+
+      <!-- Footer -->
+
+      <footer class="footer mt-20 mb-10 p-10 text-black md:gap-20 lg:gap-40">
+        <div>
+          <h4 class="font-carme text-2xl">KONTAKT</h4>
+          <p class="font-carme">Bastionvej 2</p>
+          <p class="font-carme">Prøvestenen</p>
+          <p class="font-carme">2300 KBH S</p>
+          <a class="font-carme pt-5" href="#">Tlf. +45 22555512</a>
+          <a class="font-carme" href="#">info@musikloftet.dk</a>
+        </div>
+        <div class="justify-self-center">
+          <div class="md:w-50 mt-5 w-40">
+            <img src="img/logo_tekst.png" alt="logo" />
+          </div>
+          <div class="flex">
+            <div class="mt-10 flex space-x-6">
+              <img src="img/insta.svg" alt="Instagram" />
+              <img src="img/facebook.svg" alt="Facebook" />
+              <img src="img/linked.svg" alt="LinkedIn" />
+            </div>
+          </div>
+        </div>
+        <div class="mt-3">
+          <h4 class="font-carme text-2xl">FAQ</h4>
+          <a class="underline" href="FAQ.html">Ofte stillede spørgsmål</a>
+        </div>
+      </footer>
     </main>
     <script type="module" src="index.js"></script>
   </body>
