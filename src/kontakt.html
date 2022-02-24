@@ -28,33 +28,50 @@
       </div>
     </header>
     <main class="md:mx-30 mx-4 sm:mx-20 lg:mx-40 xl:mx-60">
-      <h1 class="font-carme mb-5 mt-20 text-7xl sm:text-8xl md:text-9xl">
-        KONTAKT
-      </h1>
-      <h1 class="font-noto mb-5 text-7xl italic sm:text-8xl md:text-9xl">
-        FOR
-      </h1>
-      <h1 class="font-carme mb-5 text-7xl sm:text-8xl md:text-9xl">RÅDIGHED</h1>
-      <article class="grid grid-cols-3">
-        <img class="col-span-2" src="img/gal1.webp" alt="" />
-        <div class="place-self-end">
-          <p class="font-carme">Bastionsvej 2</p>
-          <p class="font-carme">Prøvestenen</p>
-          <p class="font-carme">2300 KBH S</p>
+      <section class="lg:grid lg:grid-cols-1 lg:grid-rows-4">
+        <div class="lg:relative lg:col-start-1 lg:row-span-2 lg:row-start-1">
+          <h1 class="font-carme mb-5 mt-5 text-7xl sm:text-8xl md:text-9xl">
+            KONTAKT
+          </h1>
+          <h1 class="font-noto mb-5 text-7xl italic sm:text-8xl md:text-9xl">
+            FOR
+          </h1>
+          <h1 class="font-carme mb-5 text-7xl sm:text-8xl md:text-9xl">
+            RÅDIGHED
+          </h1>
         </div>
-      </article>
-      <div class="mt-5 grid grid-cols-5">
-        <hr
-          class="border-lavendel border-1 col-span-1 mr-5 self-center border-solid"
-        />
-        <p class="font-carme col-span-4">Tlf. 22 55 55 12</p>
-      </div>
-      <div class="grid grid-cols-5">
-        <hr
-          class="border-lavendel border-1 col-span-1 mr-5 self-center border-solid"
-        />
-        <p class="font-carme">info@musikloftet.dk</p>
-      </div>
+        <!-- Billede + addresse -->
+        <article
+          class="grid grid-cols-3 grid-rows-3 gap-4 lg:row-span-3 lg:row-start-2"
+        >
+          <img
+            class="col-span-2 col-start-1 row-span-2 row-start-1 lg:col-span-2 lg:col-start-2"
+            src="img/map.png"
+            alt="kort"
+          />
+          <div class="row-start-2 lg:col-start-4">
+            <p class="font-carme">Bastionsvej 2</p>
+            <p class="font-carme">Prøvestenen</p>
+            <p class="font-carme">2300 KBH S</p>
+          </div>
+          <div
+            class="col-span-2 row-start-3 lg:col-span-1 lg:col-start-1 lg:row-start-2"
+          >
+            <div class="mt-5 grid grid-cols-5 lg:mt-0">
+              <hr
+                class="border-lavendel border-1 col-span-1 mr-5 self-center border-solid"
+              />
+              <p class="font-carme col-span-4">Tlf. 22 55 55 12</p>
+            </div>
+            <div class="grid grid-cols-5">
+              <hr
+                class="border-lavendel border-1 col-span-1 mr-5 self-center border-solid"
+              />
+              <p class="font-carme">info@musikloftet.dk</p>
+            </div>
+          </div>
+        </article>
+      </section>
     </main>
     <script type="module" src="index.js"></script>
   </body>
