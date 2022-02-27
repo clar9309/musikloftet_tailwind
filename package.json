@@ -5,7 +5,7 @@
   "source": "src/index.html",
   "scripts": {
     "dev": "npx parcel",
-    "build": "rm -rf dist/ && npx parcel build"
+    "build": "rm -rf dist/ && npx parcel build --public-url ./"
   },
   "keywords": [],
   "author": "",
